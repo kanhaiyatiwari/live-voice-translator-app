@@ -77,7 +77,7 @@ When User A and User B communicate through this app, User A will receive respons
 
 For questions or suggestions, feel free to reach out!
 
-- **Email**: your-email@example.com
+- **Email**: tiwarikanhaiya@gmail.com
 
 
 Thank you for visiting our repository! We hope this application enhances your communication experience by bridging language gaps.
