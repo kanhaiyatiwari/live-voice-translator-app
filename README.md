@@ -57,11 +57,10 @@ When User A and User B communicate through this app, User A will receive respons
 1. Ensure the backend is running.
 2. Open `index.html` in your preferred web browser to start using the application.
 
-## 📸 Screenshots
-
-- **Chat Interface**
-- **Call Interface**
-- **Translation in Action**
+## 📸 demo link
+- **call demo video**: https://drive.google.com/file/d/1Okllkhpr7_1di4Nf5kHHacBSmKW9HJoU/view?usp=sharing
+- **call demo video**:inter video link (pending) need some time
+- **demo website** (pending) need some time
 
 ## 📖 Usage
 
