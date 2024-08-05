@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+<Style>
+
+         #chatSection, #registerSection { display: none; } 
+    </style>
+</head>
+<body>
+    <audio id="audioPlayer">
+        <source src="ringtone.mp3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!-- Registration Section -->
+    <div id="registerSection">
+        <h2>Register</h2>
+        <input type="text" id="registerUsername" placeholder="Username" /><br />
+        <input type="email" id="registerEmail" placeholder="Email" /><br />
+        <input type="text" id="nativelanguage" placeholder="Your native language" /><br />
+        <input type="password" id="registerPassword" placeholder="Password" /><br />
+        <button onclick="register()">Register</button>
+        <button onclick="document.getElementById('registerSection').style.display='none'; document.getElementById('loginSection').style.display='block'">Already have an account? Login</button>
+    </div>
+
+    <!-- Login Section -->
+    <div id="loginSection">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username" /><br />
+        <input type="password" id="loginPassword" placeholder="Password" /><br />
+        <button onclick="login()">Login</button>
+        <button onclick="document.getElementById('loginSection').style.display='none'; document.getElementById('registerSection').style.display='block'">Don't have an account? Register</button>
+    </div>
+
+    <!-- Chat Section -->
+    <div id="chatSection">
+        <h2>Chat</h2>
+
+        <input type="text" id="searchQuery" placeholder="Search Users" />
+        <button onclick="searchUsers()">Search</button>
+        <ul id="userList"></ul><br />
+        <input type="text" id="recipient" placeholder="Recipient Username" /><br />
+
+        <h1>Voice to Text</h1>
+        <button id="start">Start</button>
+        <button id="end">End</button>
+        <textarea id="messageContent" placeholder="Type your message here"></textarea><br />
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="StartCall()">call</button>
+        <div id="messageContainer"></div>
+    </div>
+
+
+    <div id="incoming-call-popup" class="popup hidden">
+        <div class="popup-content">
+            <p id="caller-name">Caller Name</p>
+            <button id="accept-button"  class="popup-button"  onclick="acceptButton()">Accept</button>
+            <button id="cut-button" class="popup-button" onclick="cutButton()">Cut</button>
+        </div>
+    </div>
+    
+     <!-- New In-Call Pop-up -->
+     <div id="in-call-popup" class="popup hidden">
+        <div class="popup-content">
+            <p id="in-call-caller-name">Caller Name</p>
+            <p id="call-status">In Call...</p>
+            <button id="end-call-button" class="popup-button"   onclick="dropCall()">Cut</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
