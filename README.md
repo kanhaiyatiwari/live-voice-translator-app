@@ -39,8 +39,7 @@ When User A and User B communicate through this app, User A will receive respons
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/live-translation-communication-app.git
-    cd live-translation-communication-app
+    https://github.com/kanhaiyatiwari/live-voice-translator-app.git
     ```
 
 2. Set up the MySQL database and update the `application.properties` file with your database credentials.
